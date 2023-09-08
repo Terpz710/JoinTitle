@@ -13,7 +13,6 @@ class JoinTitle extends PluginBase implements Listener {
     private $config;
 
     public function onEnable() : void {
-        $this->getLogger()->info("JoinTitle has been enabled.");
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->saveDefaultConfig();
         $this->config = $this->getConfig();
